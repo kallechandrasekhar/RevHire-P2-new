@@ -1,78 +1,57 @@
-name: CI/CD Pipeline
+name: Deploy to EC2
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   workflow_dispatch:
-    inputs:
-      deploy:
-        description: 'Deploy to EC2'
-        required: true
-        default: 'false'
-        type: choice
-        options:
-        - 'true'
-        - 'false'
 
 jobs:
-  build-and-test:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-
-    - name: Set up JDK 21
-      uses: actions/setup-java@v4
-      with:
-        java-version: '21'
-        distribution: 'temurin'
-
-    - name: Cache Maven packages
-      uses: actions/cache@v4
-      with:
-        path: ~/.m2
-        key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
-        restore-keys: ${{ runner.os }}-m2
-
-    - name: Build Backend
-      run: |
-        cd Rev-Hire
-        mvn clean package -DskipTests
-
-    - name: Set up Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '22'
-
-    - name: Cache Node.js modules
-      uses: actions/cache@v4
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: ${{ runner.os }}-node
-
-    - name: Build Frontend
-      run: |
-        cd Rev-Hire-Frontend
-        npm ci
-        npm run build --prod
-
   deploy:
-    needs: build-and-test
     runs-on: ubuntu-latest
-    if: github.event_name == 'workflow_dispatch' && github.event.inputs.deploy == 'true'
-
+    
     steps:
-    - name: Deploy to EC2
-      uses: appleboy/ssh-action@v1.0.3
-      with:
-        host: ${{ secrets.EC2_HOST }}
-        username: ${{ secrets.EC2_USER }}
-        key: ${{ secrets.EC2_SSH_KEY }}
-        script: |
-          cd /home/ec2-user/RevHire-P2-new  # Update this to your actual repo path on EC2
-          git pull origin main
-          docker build -t revhire-backend ./Rev-Hire
-          docker build -t revhire-frontend ./Rev-Hire-Frontend
-          docker-compose up -d
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Copy repository contents via scp
+        uses: appleboy/scp-action@v0.1.4
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          source: "."
+          target: "~/RevHire-P2-new"
+          
+      - name: Execute deployment commands via SSH
+        uses: appleboy/ssh-action@v0.1.6
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            cd ~/RevHire-P2-new
+            
+            export DEBIAN_FRONTEND=noninteractive
+
+            # Install Docker and Docker Compose if not found
+            if ! command -v docker &> /dev/null; then
+              echo "Installing Docker..."
+              sudo apt-get update -y
+              sudo apt-get install -y docker.io
+              sudo systemctl start docker
+              sudo systemctl enable docker
+              sudo usermod -aG docker $USER || true
+            fi
+
+            if ! command -v docker-compose &> /dev/null; then
+              echo "Installing Docker Compose..."
+              sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-linux-$(uname -m)" -o /usr/local/bin/docker-compose
+              sudo chmod +x /usr/local/bin/docker-compose
+            fi
+
+            # Shut down existing containers
+            sudo /usr/local/bin/docker-compose down || sudo docker-compose down || true
+            
+            # Start up new containers
+            sudo /usr/local/bin/docker-compose up -d --build || sudo docker-compose up -d --build
