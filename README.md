@@ -20,8 +20,6 @@ Go to Repository → Settings → Secrets and variables → Actions and add:
 
 | Secret Name | Value |
 |-------------|-------|
-| `DOCKER_USERNAME` | Your Docker Hub username |
-| `DOCKER_PASSWORD` | Your Docker Hub password/token |
 | `EC2_SSH_KEY` | Open your .pem file with a text editor and paste the entire content (including -----BEGIN... and -----END...) |
 | `EC2_USER` | ec2-user (default for Amazon Linux AMI) |
 | `EC2_HOST` | Your EC2 public IP or DNS (e.g., 54.123.45.67) |
