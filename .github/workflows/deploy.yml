@@ -73,5 +73,6 @@ jobs:
         script: |
           cd /home/ec2-user/RevHire-P2-new  # Update this to your actual repo path on EC2
           git pull origin main
-          docker-compose build
+          docker build -t revhire-backend ./Rev-Hire
+          docker build -t revhire-frontend ./Rev-Hire-Frontend
           docker-compose up -d

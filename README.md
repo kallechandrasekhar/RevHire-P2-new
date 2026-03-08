@@ -11,9 +11,15 @@
    sudo amazon-linux-extras install docker
    sudo service docker start
    sudo usermod -a -G docker ec2-user
-   # Install docker-compose
+   # Install Docker Compose (latest)
    sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
    sudo chmod +x /usr/local/bin/docker-compose
+   # Install Docker Buildx (for ec2-user)
+   mkdir -p ~/.docker/cli-plugins
+   curl -L https://github.com/docker/buildx/releases/latest/download/buildx-$(uname -s)-$(uname -m) -o ~/.docker/cli-plugins/docker-buildx
+   chmod +x ~/.docker/cli-plugins/docker-buildx
+   # Verify
+   docker buildx version
    # Logout and login again for docker group
    ```
 3. Clone your repository:
