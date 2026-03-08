@@ -4,15 +4,23 @@
 
 ### EC2 Instance Setup (Amazon Linux)
 1. Launch an Amazon Linux EC2 instance
-2. Install Docker and Docker Compose:
+2. Install required packages:
    ```bash
    sudo yum update -y
+   sudo yum install git -y
    sudo amazon-linux-extras install docker
    sudo service docker start
    sudo usermod -a -G docker ec2-user
    # Install docker-compose
    sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
    sudo chmod +x /usr/local/bin/docker-compose
+   # Logout and login again for docker group
+   ```
+3. Clone your repository:
+   ```bash
+   cd /home/ec2-user
+   git clone git@github.com:yourusername/Rev_Hire.git
+   # Or if already cloned, ensure the path is /home/ec2-user/Rev_Hire
    ```
 
 ### GitHub Secrets Setup
@@ -78,3 +86,9 @@ If you get "Key is invalid. You must supply a key in OpenSSH public key format":
 openssl rsa -in your-key.pem -out openssh_key
 # Use content of openssh_key for the secret
 ```
+
+### Deployment Path Issues
+If you get "No such file or directory" for the repo path:
+- Ensure your repository is cloned to `/home/ec2-user/Rev_Hire` on EC2
+- If different, update the path in `.github/workflows/deploy.yml`
+- Run `pwd` on EC2 to confirm the current directory after SSH
