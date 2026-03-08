@@ -17,7 +17,7 @@ services:
       - revhire-network
 
   backend:
-    build: ./Rev-Hire
+    image: ${DOCKER_USERNAME}/revhire-backend:latest
     container_name: revhire-backend
     ports:
       - "8080:8080"
@@ -31,7 +31,7 @@ services:
       - revhire-network
 
   frontend:
-    build: ./Rev-Hire-Frontend
+    image: ${DOCKER_USERNAME}/revhire-frontend:latest
     container_name: revhire-frontend
     ports:
       - "80:80"

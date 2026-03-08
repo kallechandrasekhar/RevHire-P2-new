@@ -43,6 +43,40 @@ Go to Repository → Settings → Secrets and variables → Actions and add:
 2. Go to Actions tab → "CI/CD Pipeline" → "Run workflow"
 3. Select "deploy: true" and run
 
-## Access
-- Frontend: `http://your-ec2-ip`
-- Backend: `http://your-ec2-ip:8080`
+### Troubleshooting SSH Key Issues
+
+If you get "Key is invalid. You must supply a key in OpenSSH public key format":
+
+**Recommended Solution: Generate a new OpenSSH key pair**
+
+1. **Generate new SSH key on your local machine**:
+   ```bash
+   ssh-keygen -t rsa -b 2048 -f deploy_key -N ""
+   # This creates deploy_key and deploy_key.pub
+   ```
+
+2. **Add the public key to EC2**:
+   ```bash
+   # SSH to EC2 using your existing method
+   ssh -i your-existing-key.pem ec2-user@your-ec2-ip
+   
+   # On EC2, add the public key
+   echo "paste_content_of_deploy_key.pub_here" >> ~/.ssh/authorized_keys
+   chmod 600 ~/.ssh/authorized_keys
+   ```
+
+3. **Update GitHub secret**:
+   - Copy the entire content of `deploy_key` (private key file)
+   - Paste it as the `EC2_SSH_KEY` secret in GitHub
+
+4. **Test the new key**:
+   ```bash
+   ssh -i deploy_key ec2-user@your-ec2-ip
+   ```
+
+**Alternative: Convert existing PEM key**
+```bash
+# Convert PEM to OpenSSH format
+openssl rsa -in your-key.pem -out openssh_key
+# Use content of openssh_key for the secret
+```
