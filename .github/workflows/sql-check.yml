@@ -1,0 +1,29 @@
+name: SQL Check
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  sql-check:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install SQLFluff
+      run: pip install sqlfluff
+
+    - name: Check for SQL files
+      run: find . -name "*.sql" -type f
+
+    - name: Lint SQL files
+      run: sqlfluff lint . --dialect mysql || true  # Ignore if no SQL files

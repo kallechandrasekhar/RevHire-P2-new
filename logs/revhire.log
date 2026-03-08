@@ -1,0 +1,266 @@
+2026-03-08 08:33:02.220 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-03-08 08:33:02.260 [main] INFO  com.revhire.RevHireApplication - Starting RevHireApplication using Java 21.0.8 with PID 26684 (C:\Users\chand\OneDrive\Desktop\Rev_Hire\Rev-Hire\target\classes started by chand in C:\Users\chand\OneDrive\Desktop\Rev_Hire)
+2026-03-08 08:33:02.260 [main] DEBUG com.revhire.RevHireApplication - Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-03-08 08:33:02.260 [main] INFO  com.revhire.RevHireApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-08 08:33:03.176 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-08 08:33:03.259 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 9 JPA repository interfaces.
+2026-03-08 08:33:03.810 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-08 08:33:03.827 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+2026-03-08 08:33:03.842 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+2026-03-08 08:33:03.842 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-08 08:33:03.842 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-08 08:33:03.858 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-03-08 08:33:03.921 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-08 08:33:03.931 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1621 ms
+2026-03-08 08:33:04.083 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-08 08:33:04.159 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-03-08 08:33:04.190 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-08 08:33:04.439 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-08 08:33:04.460 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-08 08:33:04.602 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f08d676
+2026-03-08 08:33:04.602 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-08 08:33:04.660 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-08 08:33:04.660 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-03-08 08:33:05.742 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-08 08:33:05.889 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-08 08:33:06.191 [main] DEBUG com.revhire.security.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2026-03-08 08:33:06.563 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-08 08:33:06.857 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5292d417, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@415c5469, org.springframework.security.web.context.SecurityContextHolderFilter@4f74edbf, org.springframework.security.web.header.HeaderWriterFilter@3687f6b6, org.springframework.web.filter.CorsFilter@5aef36a9, org.springframework.security.web.authentication.logout.LogoutFilter@1c0f32ad, com.revhire.security.JwtAuthFilter@67201eeb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5ce9c9e8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@249fa2cb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19544627, org.springframework.security.web.session.SessionManagementFilter@27ca8a5a, org.springframework.security.web.access.ExceptionTranslationFilter@608f79a8, org.springframework.security.web.access.intercept.AuthorizationFilter@3220ffb]
+2026-03-08 08:33:07.110 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-08 08:33:07.110 [main] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-03-08 08:33:07.110 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-08 08:33:07.110 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-08 08:33:07.126 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-08 08:33:07.126 [main] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-08 08:33:07.143 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-03-08 08:33:57.625 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-03-08 08:33:57.658 [main] INFO  com.revhire.RevHireApplication - Starting RevHireApplication using Java 21.0.8 with PID 21344 (C:\Users\chand\OneDrive\Desktop\Rev_Hire\Rev-Hire\target\classes started by chand in C:\Users\chand\OneDrive\Desktop\Rev_Hire)
+2026-03-08 08:33:57.658 [main] DEBUG com.revhire.RevHireApplication - Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-03-08 08:33:57.658 [main] INFO  com.revhire.RevHireApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-08 08:33:58.397 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-08 08:33:58.477 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75 ms. Found 9 JPA repository interfaces.
+2026-03-08 08:33:58.943 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-08 08:33:58.947 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+2026-03-08 08:33:58.947 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+2026-03-08 08:33:58.954 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-08 08:33:58.954 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-08 08:33:58.954 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-03-08 08:33:59.018 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-08 08:33:59.020 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1319 ms
+2026-03-08 08:33:59.131 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-08 08:33:59.174 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-03-08 08:33:59.205 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-08 08:33:59.380 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-08 08:33:59.400 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-08 08:33:59.518 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a583720
+2026-03-08 08:33:59.518 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-08 08:33:59.550 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-08 08:33:59.550 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-03-08 08:34:00.716 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-08 08:34:00.845 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-08 08:34:01.135 [main] DEBUG com.revhire.security.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2026-03-08 08:34:01.510 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-08 08:34:01.816 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2975715, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@47ccbbd5, org.springframework.security.web.context.SecurityContextHolderFilter@1fcb01f8, org.springframework.security.web.header.HeaderWriterFilter@4f74edbf, org.springframework.web.filter.CorsFilter@2e8417ea, org.springframework.security.web.authentication.logout.LogoutFilter@5292d417, com.revhire.security.JwtAuthFilter@54644470, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63ee2891, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@9670873, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f65a6d7, org.springframework.security.web.session.SessionManagementFilter@75f67fe5, org.springframework.security.web.access.ExceptionTranslationFilter@62604ed4, org.springframework.security.web.access.intercept.AuthorizationFilter@2e0d6270]
+2026-03-08 08:34:02.085 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-08 08:34:02.087 [main] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-03-08 08:34:02.087 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-08 08:34:02.087 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-08 08:34:02.098 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-08 08:34:02.101 [main] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-08 08:34:02.119 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-03-08 08:38:18.926 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-03-08 08:38:18.958 [main] INFO  com.revhire.RevHireApplication - Starting RevHireApplication using Java 21.0.8 with PID 23540 (C:\Users\chand\OneDrive\Desktop\Rev_Hire\Rev-Hire\target\classes started by chand in C:\Users\chand\OneDrive\Desktop\Rev_Hire)
+2026-03-08 08:38:18.958 [main] DEBUG com.revhire.RevHireApplication - Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-03-08 08:38:18.958 [main] INFO  com.revhire.RevHireApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-08 08:38:19.675 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-08 08:38:19.750 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 73 ms. Found 9 JPA repository interfaces.
+2026-03-08 08:38:20.200 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-08 08:38:20.200 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+2026-03-08 08:38:20.200 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+2026-03-08 08:38:20.211 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-08 08:38:20.213 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-08 08:38:20.213 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-03-08 08:38:20.261 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-08 08:38:20.261 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1262 ms
+2026-03-08 08:38:20.371 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-08 08:38:20.423 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-03-08 08:38:20.453 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-08 08:38:20.608 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-08 08:38:20.624 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-08 08:38:20.738 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45dc7be
+2026-03-08 08:38:20.738 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-08 08:38:20.778 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-08 08:38:20.778 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-03-08 08:38:21.688 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-08 08:38:21.781 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-08 08:38:22.024 [main] DEBUG com.revhire.security.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2026-03-08 08:38:22.358 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-08 08:38:22.601 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@31d327b6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b084c4c, org.springframework.security.web.context.SecurityContextHolderFilter@2f1d2384, org.springframework.security.web.header.HeaderWriterFilter@41dcfd0, org.springframework.web.filter.CorsFilter@2b08f55a, org.springframework.security.web.authentication.logout.LogoutFilter@4676fcd9, com.revhire.security.JwtAuthFilter@4b89515b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6dcf39c6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1c0f32ad, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@67b5da40, org.springframework.security.web.session.SessionManagementFilter@240b656f, org.springframework.security.web.access.ExceptionTranslationFilter@75f67fe5, org.springframework.security.web.access.intercept.AuthorizationFilter@63513c1c]
+2026-03-08 08:38:22.817 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-08 08:38:22.841 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-03-08 08:38:22.846 [main] INFO  com.revhire.RevHireApplication - Started RevHireApplication in 4.192 seconds (process running for 4.91)
+2026-03-08 08:39:24.853 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-08 08:39:24.853 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-08 08:39:24.853 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-03-08 08:39:24.889 [http-nio-8080-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Securing OPTIONS /api/v1/auth/register
+2026-03-08 08:39:24.916 [http-nio-8080-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Securing POST /api/v1/auth/register
+2026-03-08 08:39:24.919 [http-nio-8080-exec-9] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-08 08:39:24.921 [http-nio-8080-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Secured POST /api/v1/auth/register
+2026-03-08 08:39:25.091 [http-nio-8080-exec-9] INFO  com.revhire.service.impl.AuthServiceImpl - Registration attempt for email: abc@gmail.com
+2026-03-08 08:39:25.532 [http-nio-8080-exec-9] INFO  com.revhire.service.impl.AuthServiceImpl - User registered successfully with id 19 and role JOB_SEEKER
+2026-03-08 08:39:25.532 [http-nio-8080-exec-9] DEBUG com.revhire.service.impl.AuthServiceImpl - Creating JobSeeker profile for user abc@gmail.com
+2026-03-08 08:39:25.536 [http-nio-8080-exec-9] INFO  com.revhire.service.impl.AuthServiceImpl - JobSeeker profile created for user abc@gmail.com
+2026-03-08 08:39:25.582 [http-nio-8080-exec-9] INFO  com.revhire.service.impl.AuthServiceImpl - JWT token generated for user abc@gmail.com
+2026-03-08 08:39:27.680 [http-nio-8080-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing OPTIONS /api/v1/jobseekers/profile/me
+2026-03-08 08:39:27.690 [http-nio-8080-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Securing OPTIONS /api/v1/applications/my
+2026-03-08 08:39:27.692 [http-nio-8080-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/jobseekers/profile/me
+2026-03-08 08:39:27.692 [http-nio-8080-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/applications/my
+2026-03-08 08:39:27.871 [http-nio-8080-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/jobseekers/profile/me
+2026-03-08 08:39:27.871 [http-nio-8080-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/applications/my
+2026-03-08 08:39:27.889 [http-nio-8080-exec-7] INFO  com.revhire.service.impl.ApplicationServiceImpl - Fetching applications for user abc@gmail.com
+2026-03-08 08:39:27.889 [http-nio-8080-exec-7] DEBUG com.revhire.service.impl.ApplicationServiceImpl - Fetching user with email: abc@gmail.com
+2026-03-08 08:39:27.931 [http-nio-8080-exec-7] INFO  com.revhire.service.impl.ApplicationServiceImpl - User abc@gmail.com has 0 applications
+2026-03-08 08:39:33.137 [http-nio-8080-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/jobseekers/profile/me
+2026-03-08 08:39:33.157 [http-nio-8080-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/jobseekers/profile/me
+2026-03-08 08:39:35.378 [http-nio-8080-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/jobseekers/profile/me
+2026-03-08 08:39:35.395 [http-nio-8080-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/jobseekers/profile/me
+2026-03-08 08:40:05.611 [http-nio-8080-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Securing OPTIONS /api/v1/jobseekers/profile
+2026-03-08 08:40:05.619 [http-nio-8080-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Securing PUT /api/v1/jobseekers/profile
+2026-03-08 08:40:05.634 [http-nio-8080-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Secured PUT /api/v1/jobseekers/profile
+2026-03-08 08:40:12.463 [http-nio-8080-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/applications/my
+2026-03-08 08:40:12.463 [http-nio-8080-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/jobseekers/profile/me
+2026-03-08 08:40:12.477 [http-nio-8080-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/applications/my
+2026-03-08 08:40:12.477 [http-nio-8080-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/jobseekers/profile/me
+2026-03-08 08:40:12.477 [http-nio-8080-exec-9] INFO  com.revhire.service.impl.ApplicationServiceImpl - Fetching applications for user abc@gmail.com
+2026-03-08 08:40:12.477 [http-nio-8080-exec-9] DEBUG com.revhire.service.impl.ApplicationServiceImpl - Fetching user with email: abc@gmail.com
+2026-03-08 08:40:12.477 [http-nio-8080-exec-9] INFO  com.revhire.service.impl.ApplicationServiceImpl - User abc@gmail.com has 0 applications
+2026-03-08 08:40:14.942 [http-nio-8080-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/jobseekers/profile/me
+2026-03-08 08:40:14.959 [http-nio-8080-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/jobseekers/profile/me
+2026-03-08 08:40:17.304 [http-nio-8080-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/jobseekers/profile/me
+2026-03-08 08:40:17.320 [http-nio-8080-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/jobseekers/profile/me
+2026-03-08 08:40:19.500 [http-nio-8080-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/applications/my
+2026-03-08 08:40:19.500 [http-nio-8080-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/jobseekers/profile/me
+2026-03-08 08:40:19.521 [http-nio-8080-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/applications/my
+2026-03-08 08:40:19.521 [http-nio-8080-exec-5] INFO  com.revhire.service.impl.ApplicationServiceImpl - Fetching applications for user abc@gmail.com
+2026-03-08 08:40:19.521 [http-nio-8080-exec-5] DEBUG com.revhire.service.impl.ApplicationServiceImpl - Fetching user with email: abc@gmail.com
+2026-03-08 08:40:19.521 [http-nio-8080-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/jobseekers/profile/me
+2026-03-08 08:40:19.538 [http-nio-8080-exec-5] INFO  com.revhire.service.impl.ApplicationServiceImpl - User abc@gmail.com has 0 applications
+2026-03-08 08:40:20.922 [http-nio-8080-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Securing OPTIONS /api/v1/jobseekers/resume/file/me
+2026-03-08 08:40:20.922 [http-nio-8080-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Securing OPTIONS /api/v1/jobseekers/resume/text/me
+2026-03-08 08:40:20.922 [http-nio-8080-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/jobseekers/resume/file/me
+2026-03-08 08:40:20.922 [http-nio-8080-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/jobseekers/resume/text/me
+2026-03-08 08:40:20.942 [http-nio-8080-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/jobseekers/resume/text/me
+2026-03-08 08:40:20.943 [http-nio-8080-exec-3] DEBUG org.springframework.security.web.access.AccessDeniedHandlerImpl - Responding with 403 status code
+2026-03-08 08:40:20.953 [http-nio-8080-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /error
+2026-03-08 08:40:20.954 [http-nio-8080-exec-3] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-08 08:40:20.955 [http-nio-8080-exec-3] DEBUG org.springframework.security.web.authentication.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-08 11:06:39.980 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=26m16s576ms323µs100ns).
+2026-03-08 14:24:28.914 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h17m16s962ms798µs100ns).
+2026-03-08 17:10:35.192 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m3s665ms992µs699ns).
+2026-03-08 17:59:23.828 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-08 17:59:23.868 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-08 17:59:23.880 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-08 21:42:42.201 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-03-08 21:42:42.258 [main] INFO  com.revhire.RevHireApplication - Starting RevHireApplication using Java 21.0.8 with PID 1284 (C:\Users\chand\OneDrive\Desktop\Rev_Hire\Rev-Hire\target\classes started by chand in C:\Users\chand\OneDrive\Desktop\Rev_Hire)
+2026-03-08 21:42:42.258 [main] DEBUG com.revhire.RevHireApplication - Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-03-08 21:42:42.258 [main] INFO  com.revhire.RevHireApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-08 21:42:43.465 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-08 21:42:43.559 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 83 ms. Found 9 JPA repository interfaces.
+2026-03-08 21:42:44.178 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-08 21:42:44.178 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+2026-03-08 21:42:44.178 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+2026-03-08 21:42:44.193 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-08 21:42:44.193 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-08 21:42:44.193 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-03-08 21:42:44.275 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-08 21:42:44.285 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1953 ms
+2026-03-08 21:42:44.455 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-08 21:42:44.564 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-03-08 21:42:44.600 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-08 21:42:44.906 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-08 21:42:44.937 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-08 21:42:45.067 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77020328
+2026-03-08 21:42:45.067 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-08 21:42:45.121 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-08 21:42:45.121 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-03-08 21:42:46.319 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-08 21:42:46.432 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-08 21:42:46.813 [main] DEBUG com.revhire.security.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2026-03-08 21:42:47.302 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-08 21:42:47.642 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4676fcd9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2975715, org.springframework.security.web.context.SecurityContextHolderFilter@41dcfd0, org.springframework.security.web.header.HeaderWriterFilter@1bfc6e50, org.springframework.web.filter.CorsFilter@47ccbbd5, org.springframework.security.web.authentication.logout.LogoutFilter@57629340, com.revhire.security.JwtAuthFilter@261c5d1f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59845cb3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@63ee2891, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e8417ea, org.springframework.security.web.session.SessionManagementFilter@19d043a8, org.springframework.security.web.access.ExceptionTranslationFilter@27ca8a5a, org.springframework.security.web.access.intercept.AuthorizationFilter@6915b614]
+2026-03-08 21:42:47.989 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-08 21:42:48.012 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-03-08 21:42:48.023 [main] INFO  com.revhire.RevHireApplication - Started RevHireApplication in 6.283 seconds (process running for 7.693)
+2026-03-08 21:55:43.023 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-08 21:55:43.029 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-08 21:55:43.066 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 35 ms
+2026-03-08 21:55:43.126 [http-nio-8080-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/health
+2026-03-08 21:55:43.142 [http-nio-8080-exec-1] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-08 21:55:43.142 [http-nio-8080-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/health
+2026-03-08 21:56:05.625 [http-nio-8080-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing POST /api/v1/auth/register
+2026-03-08 21:56:05.625 [http-nio-8080-exec-2] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-08 21:56:05.625 [http-nio-8080-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Secured POST /api/v1/auth/register
+2026-03-08 21:59:30.031 [http-nio-8080-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Securing OPTIONS /api/v1/auth/register
+2026-03-08 21:59:30.068 [http-nio-8080-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Securing POST /api/v1/auth/register
+2026-03-08 21:59:30.073 [http-nio-8080-exec-4] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-08 21:59:30.077 [http-nio-8080-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Secured POST /api/v1/auth/register
+2026-03-08 21:59:30.298 [http-nio-8080-exec-4] INFO  com.revhire.service.impl.AuthServiceImpl - Registration attempt for email: test@test.com
+2026-03-08 21:59:31.849 [http-nio-8080-exec-4] INFO  com.revhire.service.impl.AuthServiceImpl - User registered successfully with id 20 and role JOB_SEEKER
+2026-03-08 21:59:31.852 [http-nio-8080-exec-4] DEBUG com.revhire.service.impl.AuthServiceImpl - Creating JobSeeker profile for user test@test.com
+2026-03-08 21:59:31.884 [http-nio-8080-exec-4] INFO  com.revhire.service.impl.AuthServiceImpl - JobSeeker profile created for user test@test.com
+2026-03-08 21:59:32.033 [http-nio-8080-exec-4] INFO  com.revhire.service.impl.AuthServiceImpl - JWT token generated for user test@test.com
+2026-03-08 21:59:34.200 [http-nio-8080-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Securing OPTIONS /api/v1/jobseekers/profile/me
+2026-03-08 21:59:34.210 [http-nio-8080-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Securing OPTIONS /api/v1/applications/my
+2026-03-08 21:59:34.211 [http-nio-8080-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/jobseekers/profile/me
+2026-03-08 21:59:34.227 [http-nio-8080-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/applications/my
+2026-03-08 21:59:34.619 [http-nio-8080-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/applications/my
+2026-03-08 21:59:34.619 [http-nio-8080-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/jobseekers/profile/me
+2026-03-08 21:59:34.627 [http-nio-8080-exec-8] INFO  com.revhire.service.impl.ApplicationServiceImpl - Fetching applications for user test@test.com
+2026-03-08 21:59:34.628 [http-nio-8080-exec-8] DEBUG com.revhire.service.impl.ApplicationServiceImpl - Fetching user with email: test@test.com
+2026-03-08 21:59:34.658 [http-nio-8080-exec-8] INFO  com.revhire.service.impl.ApplicationServiceImpl - User test@test.com has 0 applications
+2026-03-08 22:00:15.608 [http-nio-8080-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/jobseekers/profile/me
+2026-03-08 22:00:15.672 [http-nio-8080-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/jobseekers/profile/me
+2026-03-08 22:00:17.707 [http-nio-8080-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/jobseekers/profile/me
+2026-03-08 22:00:17.739 [http-nio-8080-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/jobseekers/profile/me
+2026-03-08 22:00:43.157 [http-nio-8080-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing OPTIONS /api/v1/jobseekers/profile
+2026-03-08 22:00:43.161 [http-nio-8080-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Securing PUT /api/v1/jobseekers/profile
+2026-03-08 22:00:43.232 [http-nio-8080-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Secured PUT /api/v1/jobseekers/profile
+2026-03-08 22:00:47.607 [http-nio-8080-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/applications/my
+2026-03-08 22:00:47.613 [http-nio-8080-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/jobseekers/profile/me
+2026-03-08 22:00:47.736 [http-nio-8080-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/applications/my
+2026-03-08 22:00:47.736 [http-nio-8080-exec-5] INFO  com.revhire.service.impl.ApplicationServiceImpl - Fetching applications for user test@test.com
+2026-03-08 22:00:47.736 [http-nio-8080-exec-5] DEBUG com.revhire.service.impl.ApplicationServiceImpl - Fetching user with email: test@test.com
+2026-03-08 22:00:47.833 [http-nio-8080-exec-5] INFO  com.revhire.service.impl.ApplicationServiceImpl - User test@test.com has 0 applications
+2026-03-08 22:00:47.874 [http-nio-8080-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/jobseekers/profile/me
+2026-03-08 22:00:50.144 [http-nio-8080-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/jobseekers/profile/me
+2026-03-08 22:00:50.179 [http-nio-8080-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/jobseekers/profile/me
